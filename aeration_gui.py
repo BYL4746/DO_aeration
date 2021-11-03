@@ -96,7 +96,7 @@ class DO_gui():
         if i>30:
             i = 30
         
-        self.saturate_DO.set(self.DO_table[])
+        self.saturate_DO.set(self.DO_table[i])
         self.current_DO.set(self.sensor.read_float(87))
         if self.current_DO.get()>=5:
             self.label4.config(fg='green')
